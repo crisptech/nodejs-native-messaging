@@ -1,5 +1,4 @@
 require("buffer");
-require("./messaging");
 
 let main = () => {
   let payloadSize = null;
@@ -76,7 +75,3 @@ let main = () => {
 let sendMessage = main();
 
 sendMessage({ hi: "bye" });
-
-setInterval(() => {
-  sendMessage({ huh: "thats funny" });
-}, 1000);
